@@ -8,31 +8,43 @@
  */
 
 
-open class Task()
-{
-    private var id: Int = 0
-    var name:  String = ""
-    var done: Boolean = false
-    constructor(id: Int, name: String, done: Boolean) : this() {
-        this.id=id
-        this.name=name
-        this.done=done
-    }
-}
+ data class Task( var name: String,  var done: Boolean)
 
-class Tasks : Task()
+ class Tasks(private var tasks: List<Task>)
 {
-    var tasks: List<Task> = TODO()
+    private fun showTask(i:Int)
+    {
+        val show = tasks[i]
+        print("Your task: ${show.name}")
+        if (show.done)
+        {
+            print(" is done")
+        }
+        else
+        {
+            print(" is not yet done")
+        }
+    }
+
     fun addTask(task: Task)
     {
         tasks.addLast(task)
+    }
+    fun showAllTasks()
+    {
+        var i = 0
+        while (i < tasks.size)
+        {
+            showTask(i)
+            i++
+        }
     }
 }
 
 fun main()
 {
-    val task = Task(1,"test",false)
-    val tasks: Tasks = Tasks()
-    tasks.addTask(task)
-
+    val task = Task("test",false)
+    val taskList = listOf(task)
+    val tasks = Tasks(taskList)
+    tasks.showAllTasks()
 }
