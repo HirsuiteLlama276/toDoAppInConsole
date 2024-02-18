@@ -9,12 +9,12 @@
 const val fileName = "listOfTasks.csv"
 fun main()
 {
-    val task = Task(1,"test",false)
+    val task = Task(1,"Making TODO app in Android",false)
     val tasks = arrayListOf<Task>()
     tasks.add(task)
     val test = Tasks(tasks)
 
-    //saveDataToFile(test.saveToFile(), fileName)
+    saveDataToFile(test.saveToFile(), fileName)
     test.readFromFile(readDataFromFile(fileName))
     test.showAllTasks()
 }
