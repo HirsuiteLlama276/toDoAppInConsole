@@ -14,12 +14,11 @@ class Tasks(private var tasks: ArrayList<Task>) {
 
     private fun showTask(i: Int): String {
         val show = tasks[i]
-        var result: String
-       result = "Your task: ${show.name}"
-        if (show.done) {
-            result += " is done"
+        var result = "Your task: ${show.name}"
+        result += if (show.done) {
+            " is done"
         } else {
-            result += " is not yet done"
+            " is not yet done"
         }
         return result
     }
@@ -35,7 +34,8 @@ class Tasks(private var tasks: ArrayList<Task>) {
     fun saveToFile(): String {
         var i = 0
         var data = ""
-        while (i < tasks.size) {
+        while (i < tasks.size)
+        {
             data = "${tasks[i].id},${tasks[i].name},${tasks[i].done}\n"
             i++
         }
@@ -43,12 +43,11 @@ class Tasks(private var tasks: ArrayList<Task>) {
     }
 
     fun readFromFile(dataFromFile: List<List<String>>) {
-        //data.forEach { println(it) }
         var i = 0
         var data: Task
-        println("Data read from $fileName:")
-        while (i < dataFromFile.size-1) {
-            data = Task(dataFromFile[i].get(0).toInt(),dataFromFile[i].get(1),dataFromFile[i].get(2).toBoolean())
+        while (i < dataFromFile.size-1)
+        {
+            data = Task(dataFromFile[i][0].toInt(),dataFromFile[i][1],dataFromFile[i][2].toBoolean())
             tasks.add(data)
             i++
         }

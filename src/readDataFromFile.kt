@@ -13,9 +13,7 @@ fun readDataFromFile(fileName: String): List<List<String>> {
         while (tokenizer.hasMoreTokens()) {
             values.add(tokenizer.nextToken())
         }
-
         result.add(values)
     }
-
     return result
 }
