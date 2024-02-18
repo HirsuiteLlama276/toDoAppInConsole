@@ -4,18 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="338030a7-b836-46a1-8e13-f205a9d96f99" name="Changes" comment="Making a Task class, and Tasks class. Creating project.">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Task.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tasks.kt" afterDir="false" />
+    <list default="true" id="338030a7-b836-46a1-8e13-f205a9d96f99" name="Changes" comment="Change type from List&lt;Task&gt; to Array&lt;Task&gt; for better management with Tasks. Added functions to manage it inside Tasks class. Clearing the code by adding files with classes.">
+      <change afterPath="$PROJECT_DIR$/src/readDataFromFile.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saveDataToFile.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tasks.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tasks.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -31,6 +37,23 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HirsuiteLlama276&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f0c23d4b-8212-4732-afe4-4d4371c83b2d" />
+        <option name="url" value="https://github.com/HirsuiteLlama276/toDoAppInConsole.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -82,7 +105,9 @@
       <workItem from="1707940433293" duration="720000" />
       <workItem from="1707942431351" duration="1495000" />
       <workItem from="1708114585465" duration="2773000" />
-      <workItem from="1708169512670" duration="2968000" />
+      <workItem from="1708169512670" duration="3316000" />
+      <workItem from="1708244735433" duration="278000" />
+      <workItem from="1708245023084" duration="2387000" />
     </task>
     <task id="LOCAL-00001" summary="Making a Task class, and Tasks class. Creating project.">
       <option name="closed" value="true" />
@@ -108,7 +133,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707931350790</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Change type from List&lt;Task&gt; to Array&lt;Task&gt; for better management with Tasks. Added functions to manage it inside Tasks class. Clearing the code by adding files with classes.">
+      <option name="closed" value="true" />
+      <created>1708172637437</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708172637437</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Change type from List&lt;Task&gt; to Array&lt;Task&gt; for better management with Tasks. Added functions to manage it inside Tasks class. Clearing the code by adding files with classes.">
+      <option name="closed" value="true" />
+      <created>1708172715381</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708172715381</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +168,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Making a Task class, and Tasks class. Creating project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Making a Task class, and Tasks class. Creating project." />
+    <MESSAGE value="Change type from List&lt;Task&gt; to Array&lt;Task&gt; for better management with Tasks. Added functions to manage it inside Tasks class. Clearing the code by adding files with classes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Change type from List&lt;Task&gt; to Array&lt;Task&gt; for better management with Tasks. Added functions to manage it inside Tasks class. Clearing the code by adding files with classes." />
   </component>
 </project>
